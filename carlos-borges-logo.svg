@@ -5,18 +5,18 @@
     <desc>Created with Sketch.</desc>
     <defs></defs>
     <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
-        <g id="carlos-borges-com-escrita" sketch:type="MSArtboardGroup" transform="translate(-88.000000, -283.000000)">
-            <g id="Full-Logo" sketch:type="MSLayerGroup" transform="translate(582.000000, 431.000000)" font-size="96" font-family="Proxima Nova" fill="#4A4A4A" font-weight="260">
+        <g id="carlos-borges-com-escrita" sketch:type="MSArtboardGroup" transform="translate(-88.000000, -283.000000)" fill="#4A4A4A">
+            <g id="Full-Logo" sketch:type="MSLayerGroup" transform="translate(582.000000, 431.000000)" font-size="96" font-family="Proxima Nova" font-weight="260">
                 <text id="carlos-borges" sketch:type="MSTextLayer">
                     <tspan x="0" y="95">carlos borges</tspan>
                 </text>
             </g>
-            <g id="carlos-borges-logo" sketch:type="MSLayerGroup" transform="translate(161.000000, 313.000000)" fill="#CCCCCC">
-                <polygon id="Polygon-1" sketch:type="MSShapeGroup" points="260 110 316.291651 142.5 316.291651 207.5 260 240 203.708349 207.5 203.708349 142.5 "></polygon>
-                <polygon id="Polygon-1-Copy" sketch:type="MSShapeGroup" points="195 0 251.291651 32.5 251.291651 97.5 195 130 138.708349 97.5 138.708349 32.5 "></polygon>
-                <polygon id="Polygon-1-Copy-2" sketch:type="MSShapeGroup" points="325 220 381.291651 252.5 381.291651 317.5 325 350 268.708349 317.5 268.708349 252.5 "></polygon>
-                <polygon id="Polygon-1-Copy-4" sketch:type="MSShapeGroup" points="65.5 220 122.224664 252.75 122.224664 318.25 65.5 351 8.77533605 318.25 8.77533605 252.75 "></polygon>
-                <polygon id="Polygon-1-Copy-3" sketch:type="MSShapeGroup" points="195 220 251.291651 252.5 251.291651 317.5 195 350 138.708349 317.5 138.708349 252.5 "></polygon>
+            <g id="carlos-borges-logo-copy" sketch:type="MSLayerGroup" transform="translate(33.000000, 313.000000)">
+                <polygon id="2,2" sketch:type="MSShapeGroup" points="455 220 511.291651 252.5 511.291651 317.5 455 350 398.708349 317.5 398.708349 252.5 "></polygon>
+                <polygon id="2,0" sketch:type="MSShapeGroup" points="195 220 251.291651 252.5 251.291651 317.5 195 350 138.708349 317.5 138.708349 252.5 "></polygon>
+                <polygon id="2,1" sketch:type="MSShapeGroup" points="325 220 381.291651 252.5 381.291651 317.5 325 350 268.708349 317.5 268.708349 252.5 "></polygon>
+                <polygon id="1,2" sketch:type="MSShapeGroup" points="390 110 446.291651 142.5 446.291651 207.5 390 240 333.708349 207.5 333.708349 142.5 "></polygon>
+                <polygon id="0,2" sketch:type="MSShapeGroup" points="325 0 381.291651 32.5 381.291651 97.5 325 130 268.708349 97.5 268.708349 32.5 "></polygon>
             </g>
         </g>
     </g>
