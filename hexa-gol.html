@@ -12,8 +12,8 @@
     window.kCellGap = 1;
     window.kBoardSize = 30;
 
-    window.kUnderpopulation = 1;
-    window.kOverpopulation = 1;
+    window.kUnderpopulation = 2;
+    window.kOverpopulation = 2;
     window.kBorn = 2;
 
     window.triangleHeight = function(s) {
@@ -212,11 +212,11 @@
     var hive = new Hive(canvas, window.kBoardSize, window.kBoardSize);
     var conwayGame = new ConwayGame(hive);
 
-    hive.get(window.kBoardSize - 3 + 1, window.kBoardSize - 3).alive = true;
-    hive.get(window.kBoardSize - 3 + 1, window.kBoardSize - 3 + 1).alive = true;
-    hive.get(window.kBoardSize - 3,     window.kBoardSize - 3 + 2).alive = true;
-    hive.get(window.kBoardSize - 3 + 1, window.kBoardSize - 3 + 2).alive = true;
-    hive.get(window.kBoardSize - 3 + 2, window.kBoardSize - 3 + 2).alive = true;
+    hive.get(window.kBoardSize - 2, window.kBoardSize - 1).alive = true;
+    hive.get(window.kBoardSize - 1, window.kBoardSize - 1).alive = true;
+    hive.get(window.kBoardSize - 3, window.kBoardSize - 2).alive = true;
+    hive.get(window.kBoardSize - 2, window.kBoardSize - 3).alive = true;
+    // hive.get(window.kBoardSize - 3 + 2, window.kBoardSize - 3 + 2).alive = true;
 
 //    for (var i = 0; i < hive.cells.length; i++) {
 //        if (Math.random() > 0.8) {
