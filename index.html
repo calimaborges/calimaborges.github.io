@@ -6,16 +6,50 @@
 	body {
 		width: 100%;
 		height: 100%;
-		
+
 		background-repeat: no-repeat;
 		background-attachment: fixed;
 		background-position: center;
-		background-image: url('carlos-borges-escrita-baixo-logo.svg');
+		/*background-image: url('carlos-borges-logo-plain.svg');*/
 		background-color: #f8f8f8;
 		/*background-image: url('logo-claro-escrito-abaixo.png');*/
 		/*background-color: #222222;*/
 	}
+
+	.vcenter {
+		position: fixed;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+	}
+
+	.hcenter {
+		text-align: center;
+	}
+
+	.logo {
+		margin-bottom: 10px;
+	}
+
+
+	h1,h2 {
+		font-family: Roboto, sans-serif;
+	}
+
+	h1 {
+		font-weight: 400;
+		font-size: 4em;
+		margin: 3px;
+	}
+
+	h2 {
+		font-weight: 100;
+		font-size: 3.5em;
+		margin: 0px;
+	}
 	</style>
+	<link href='https://fonts.googleapis.com/css?family=Roboto:400,300,100' rel='stylesheet' type='text/css'>
+
 	<link rel="icon" type="image/png" href="carlos-borges-logo-plain.png">
 
 	<!-- For third-generation iPad with high-resolution Retina display: -->
@@ -33,6 +67,10 @@
 	<link rel="apple-touch-icon-precomposed" href="carlos-borges-logo-plain.png">
 </head>
 <body>
-	
+	<div class="vcenter hcenter">
+		<img src="carlos-borges-logo-plain.svg" class="logo" />
+		<h1 class="roboto hcenter">Carlos Borges</h1>
+		<h2 class="roboto hcenter ">Web & Mobile Developer</h2>
+	</div>
 </body>
 </html>
