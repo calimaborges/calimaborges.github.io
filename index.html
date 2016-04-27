@@ -1,76 +1,23 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<title>Carlos Borges</title>
-	<style type="text/css">
-	body {
-		width: 100%;
-		height: 100%;
+---
+layout: default
+---
 
-		background-repeat: no-repeat;
-		background-attachment: fixed;
-		background-position: center;
-		/*background-image: url('carlos-borges-logo-plain.svg');*/
-		background-color: #f8f8f8;
-		/*background-image: url('logo-claro-escrito-abaixo.png');*/
-		/*background-color: #222222;*/
-	}
+<div class="home">
 
-	.vcenter {
-		position: fixed;
-		top: 50%;
-		left: 50%;
-		transform: translate(-50%, -50%);
-	}
+  <h1 class="page-heading">Posts</h1>
 
-	.hcenter {
-		text-align: center;
-	}
+  <ul class="post-list">
+    {% for post in site.posts %}
+      <li>
+        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
 
-	.logo {
-		margin-bottom: 10px;
-	}
+        <h2>
+          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+        </h2>
+      </li>
+    {% endfor %}
+  </ul>
 
+  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
 
-	h1,h2 {
-		font-family: Roboto, sans-serif;
-	}
-
-	h1 {
-		font-weight: 400;
-		font-size: 4em;
-		margin: 3px;
-	}
-
-	h2 {
-		font-weight: 100;
-		font-size: 3.5em;
-		margin: 0px;
-	}
-	</style>
-	<link href='https://fonts.googleapis.com/css?family=Roboto:400,300,100' rel='stylesheet' type='text/css'>
-
-	<link rel="icon" type="image/png" href="carlos-borges-logo-plain.png">
-
-	<!-- For third-generation iPad with high-resolution Retina display: -->
-	<link rel="apple-touch-icon-precomposed" sizes="144x144" href="carlos-borges-logo-plain.png">
-
-	<!-- For iPhone with high-resolution Retina display: -->
-
-	<link rel="apple-touch-icon-precomposed" sizes="114x114" href="carlos-borges-logo-plain.png">
-
-	<!-- For first- and second-generation iPad: -->
-
-	<link rel="apple-touch-icon-precomposed" sizes="72x72" href="carlos-borges-logo-plain.png">
-
-	<!-- For non-Retina iPhone, iPod Touch, and Android 2.1+ devices: -->
-	<link rel="apple-touch-icon-precomposed" href="carlos-borges-logo-plain.png">
-</head>
-<body>
-	<div class="vcenter hcenter">
-		<img src="carlos-borges-logo-plain.svg" class="logo" />
-		<h1 class="roboto hcenter">Carlos Borges</h1>
-		<h2 class="roboto hcenter ">Web & Mobile Developer</h2>
-	</div>
-</body>
-</html>
+</div>
