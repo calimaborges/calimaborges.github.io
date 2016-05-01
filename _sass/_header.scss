@@ -5,7 +5,7 @@
     display: flex;
     align-items: center;
     text-align: center;
-    padding-left: 10%;
+    padding-left: $side-margins;
 }
 
 menu {
@@ -13,19 +13,24 @@ menu {
     padding-top: 20px;
     float: left;
     width: 85%;
-    padding-right: 10%;
+    padding-right: $side-margins;
 }
 
 menuitem {
-    margin: 0 15px;
+    margin: 0 10px;
     text-transform: uppercase;
 }
 
 menuitem a {
     text-decoration: none;
-    color: #444444;
+    color: #444;
+    transition: color 0.25s;
 }
 
 menuitem a:hover {
-    color: #777777;
+    color: #aaa;
+}
+
+menuitem.active {
+    font-weight: 300;
 }

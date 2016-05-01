@@ -10,7 +10,6 @@ html {
 }
 
 body {
-    margin: 0;
     background-color: #f8f8f8;
 }
 
@@ -37,7 +36,7 @@ hr {
 }
 
 main {
-    padding: 50px 10%;
+    padding: 50px $side-margins;
 }
 
 /*---- HELPER CLASSES ----*/
