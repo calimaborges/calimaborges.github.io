@@ -3,11 +3,10 @@
 ---
 @charset "utf-8";
 
-$side-margins: 5%;
-
 @import
+        "sass_helpers",
         "base",
-        "header",
         "home",
+        "posts",
         "syntax-highlighting"
 ;

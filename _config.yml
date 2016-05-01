@@ -19,3 +19,7 @@ github_username:  calimaborges
 
 # Build settings
 markdown: kramdown
+
+# My settings
+timezone: America/Sao_Paulo
+permalink: date
