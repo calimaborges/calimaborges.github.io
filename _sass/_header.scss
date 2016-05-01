@@ -1,0 +1,31 @@
+.logo {
+    margin-top: 20px;
+    float: left;
+    width: 15%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    padding-left: 10%;
+}
+
+menu {
+    text-align: right;
+    padding-top: 20px;
+    float: left;
+    width: 85%;
+    padding-right: 10%;
+}
+
+menuitem {
+    margin: 0 15px;
+    text-transform: uppercase;
+}
+
+menuitem a {
+    text-decoration: none;
+    color: #444444;
+}
+
+menuitem a:hover {
+    color: #777777;
+}
