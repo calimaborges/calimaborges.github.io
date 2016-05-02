@@ -1,4 +1,25 @@
 /**
- * Syntax highlighting styles
- */
+* Syntax highlighting styles
+*/
+.highlight {
+    border-radius: 10px;
+    padding: 20px 30px;
+    overflow: auto;
+    margin: 20px 0;
+    line-height: 1.5em;
+}
+
+.highlight {
+    pre, code {
+        font-family: monospace;
+        font-size: 1.0em;
+    }
+}
+
+code.highlighter-rouge {
+    // font-family: "Roboto Mono", monospace;
+    // font-weight: 300;
+    font-size: 1.1em;
+}
+
 @import "_syntax-highlighting/emacs"
