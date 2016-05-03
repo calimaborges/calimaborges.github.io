@@ -22,4 +22,4 @@ markdown: kramdown
 
 # My settings
 timezone: America/Sao_Paulo
-permalink: date
+permalink: /blog/:year/:month/:day/:title
