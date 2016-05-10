@@ -4,6 +4,7 @@ title:  "Node.js Backend Workflow"
 date:   2016-05-01 21:07:16 -0300
 author: Carlos Augusto Borges
 categories: node javascript workflow
+comments: true
 ---
 
 # pre-requisits

@@ -15,4 +15,11 @@ comments: true
     {{ content }}
   </div>
 
+  <footer>
+      {% include facebook-share.html %}
+
+      {% if page.comments %}
+        {% include disqus.html %}
+      {% endif %}
+  </footer>
 </article>
