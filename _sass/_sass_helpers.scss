@@ -23,3 +23,7 @@ $break-ultra-large: 1300px;
         @media only screen and (min-width: $break-ultra-large) { @content; }
     }
 }
+
+@mixin halfsize {
+    width: ($max-size - $small-margin)/2;
+}

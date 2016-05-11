@@ -54,14 +54,14 @@ footer {
 }
 
 a {
-    color: #333;
+    color: #aaa;
     transition: color 0.25s;
     font-weight: 400;
     font-size: 0.9em;
 }
 
 a:hover {
-    color: #aaa;
+    color: #333;
 }
 
 menu {
@@ -111,4 +111,8 @@ menuitem {
     align-items: center;
     text-align: center;
     padding-left: $small-margin;
+}
+
+.clearfix {
+  clear: both;
 }
