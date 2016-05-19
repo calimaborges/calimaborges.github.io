@@ -5,6 +5,7 @@ date:   2016-05-01 21:07:16 -0300
 author: Carlos Augusto Borges
 categories: node javascript workflow
 comments: true
+abstract: In this post I talk about Node.js and a very simple workflow.
 ---
 
 # pre-requisits

@@ -1,5 +1,5 @@
 <!-- Whitespace added for readability -->
-{% assign m = page.date | date: "%-m" %}
+{% assign m = include.data | date: "%-m" %}
 {% case m %}
   {% when '1' %}Janeiro
   {% when '2' %}Fevereiro
@@ -14,5 +14,5 @@
   {% when '11' %}Novembro
   {% when '12' %}Dezembro
 {% endcase %}
-{{ page.date | date: "%d" }},
-{{ page.date | date: "%Y" }}
+{{ include.data | date: "%d" }},
+{{ include.data | date: "%Y" }}

@@ -1,118 +1,93 @@
 article {
-    header {
-        text-align: center;
-        margin-bottom: 30px;
-
-        h1 {
-            font-size: 3.0em;
-            margin: 0;
-        }
-
-        time {
-            font-size: 0.8em;
-            display: inline-block;
-            text-transform: uppercase;
-        }
-    }
-
-    h1, h2, h3 {
-        text-transform: uppercase;
-        font-weight: 700;
-        margin-top: 30px;
-    }
+  header {
+    text-align: center;
+    margin-bottom: 30px;
 
     h1 {
-        font-size: 2.0em;
-        margin-bottom: 10px;
+      font-size: 3.0em;
+      margin: 0;
     }
 
-    h2 {
-        font-size: 1.5em;
-        margin-bottom: 8px;
+    time {
+      font-size: 0.8em;
+      display: inline-block;
+      text-transform: uppercase;
+    }
+  }
+
+  footer {
+    width: 100%;
+
+    #after-post {
+      background-color: #efefef;
+      padding: 20px 40px 0px 40px;
+      margin: 20px 0 50px 0;
+
+      @include respond-to(medium-screens) {
+        padding-top: 40px;
+      }
+
+      @include respond-to(handhelds) {
+        padding-top: 40px;
+      }
     }
 
-    h3 {
-        font-size: 1.0em;
-        margin-bottom: 5px;
+    #author-pic {
+      text-align: center;
+
+      img {
+        margin-bottom: -75px;
+        border-radius: 50%;
+      }
+
     }
 
-    footer {
+    #author {
       width: 100%;
 
-      h4 {
-        text-transform: uppercase;
-      }
-
-      #after-post {
-        background-color: #efefef;
-        padding: 20px 40px 0px 40px;
-        margin: 20px 0 50px 0;
-
-        @include respond-to(medium-screens) {
-          padding-top: 40px;
-        }
-
-        @include respond-to(handhelds) {
-          padding-top: 40px;
-        }
-      }
-
-      #author-pic {
-        text-align: center;
-
-        img {
-          margin-bottom: -75px;
-          border-radius: 50%;
-        }
-
-      }
-
-      #author {
+      @include respond-to(medium-screens) {
         width: 100%;
-
-        @include respond-to(medium-screens) {
-          width: 100%;
-        }
-
-        @include respond-to(handhelds) {
-          width: 100%;
-        }
-
-        p {
-          font-size: 0.9em;
-        }
       }
 
-      #share {
-        text-align: right;
+      @include respond-to(handhelds) {
         width: 100%;
-        padding-bottom: 20px;
-        margin-bottom: 20px;
+      }
 
-        @include respond-to(medium-screens) {
-          width: 100%;
-          float: none;
-        }
-
-        @include respond-to(handhelds) {
-          width: 100%;
-          float: none;
-        }
-
-        a {
-          text-decoration: none;
-        }
-
-        ul > li {
-          padding-right: 5px;
-          padding-left: 10px;
-          display: inline-block;
-        }
-
-        ul {
-          margin: 0;
-          padding: 0;
-        }
+      p {
+        font-size: 0.9em;
       }
     }
+
+    #share {
+      text-align: right;
+      width: 100%;
+      padding-bottom: 20px;
+      margin-bottom: 20px;
+
+      @include respond-to(medium-screens) {
+        width: 100%;
+        float: none;
+      }
+
+      @include respond-to(handhelds) {
+        width: 100%;
+        float: none;
+      }
+
+      a {
+        text-decoration: none;
+      }
+
+      ul > li {
+        padding-right: 5px;
+        padding-left: 10px;
+        display: inline-block;
+      }
+
+      ul {
+        margin: 0;
+        padding: 0;
+      }
+    }
+  }
 }

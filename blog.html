@@ -4,17 +4,14 @@ title: Blog
 permalink: /blog/
 ---
 
-<ul>
+<ul id="blog-archive">
     {% for post in site.posts %}
-    <li>
-        <span>{{ post.date | date: "%b %-d, %Y" }}</span>
-        <span>
-            <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">
-                {{ post.title }}
-            </a>
-        </span>
-    </li>
+      <li>
+        <time datetime="{{ post.date | date_to_xmlschema }}" itemprop="datePublished">
+            {% include date-pt-br.html data=post.date %}
+        </time>
+        <div id="title"><a href="{{post.url | prepend:site.baseurl }}">{{ post.title }}</a></div>
+        <div id="abstract">{{ post.abstract }}</div>
+      </li>
     {% endfor %}
 </ul>
-
-<p>subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>

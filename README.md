@@ -2,7 +2,8 @@
 
 ## TO DO
 
-- [ ] Melhorar listagem de posts
+- [x] Melhorar listagem de posts
+- [ ] Criar tela de Contato
 - [ ] Iniciar projeto "taskify"
 - [ ] Documentar passo-a-passo da criação do taskify para ter os primeiros posts
-- [ ] Criar parte de contato chamando o "taskify"
+- [ ] Criar submit do contato chamando webservice do "taskify"

@@ -1,0 +1,28 @@
+ul {
+  list-style-type: none;
+}
+
+ul#blog-archive  {
+  li {
+    padding: 10px 0;
+
+    time {
+      font-size: 0.8em;
+      font-weight: 400;
+    }
+  }
+
+  a {
+    font-weight: 400;
+    color: #444;
+    transition: color 0.25s;
+  }
+
+  a:hover {
+    color: #aaa;
+  }
+
+  .active {
+    font-weight: 300;
+  }
+}
