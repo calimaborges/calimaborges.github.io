@@ -1,4 +1,8 @@
 # carlosborg.es
 
-Colors: #4A4A4A #CCCCCC
-Font: Roboto
+## TO DO
+
+- [ ] Melhorar listagem de posts
+- [ ] Iniciar projeto "taskify"
+- [ ] Documentar passo-a-passo da criação do taskify para ter os primeiros posts
+- [ ] Criar parte de contato chamando o "taskify"

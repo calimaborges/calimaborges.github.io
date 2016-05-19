@@ -68,8 +68,7 @@ article {
       }
 
       #author {
-        float: left;
-        width: 70%;
+        width: 100%;
 
         @include respond-to(medium-screens) {
           width: 100%;
@@ -86,8 +85,7 @@ article {
 
       #share {
         text-align: right;
-        width: 30%;
-        float: left;
+        width: 100%;
         padding-bottom: 20px;
         margin-bottom: 20px;
 
