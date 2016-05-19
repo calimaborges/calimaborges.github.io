@@ -1,0 +1,32 @@
+form {
+  label {
+    display: block;
+    margin: 10px 0 0 0;
+  }
+
+  input, textarea {
+    font-family: Roboto, sans-serif;
+    font-weight: 300;
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #aaa;
+  }
+
+  input[type="button"], input[type="submit"], button {
+    width: 50%;
+    float: right;
+    font-weight: 300;
+    font-size: 1.1em;
+    background-color: #fff;
+  }
+
+  input[type="button"]:hover, input[type="submit"]:hover, button:hover {
+    background-color: #ddd;
+    cursor: pointer;
+  }
+
+  textarea {
+    height: 200px;
+  }
+}
