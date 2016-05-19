@@ -45,7 +45,7 @@ article {
 
       #after-post {
         background-color: #efefef;
-        padding: 20px 20px 0px 20px;
+        padding: 20px 40px 0px 40px;
         margin: 20px 0 50px 0;
 
         @include respond-to(medium-screens) {
@@ -85,7 +85,7 @@ article {
       }
 
       #share {
-        text-align: center;
+        text-align: right;
         width: 30%;
         float: left;
         padding-bottom: 20px;
