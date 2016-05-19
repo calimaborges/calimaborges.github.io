@@ -1,0 +1,24 @@
+.vcenter {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.hcenter {
+  text-align: center;
+}
+
+.clearfix {
+  clear: both;
+}
+
+.desktop-only {
+  @include respond-to(medium-screens) {
+    visibility: hidden;
+  }
+
+  @include respond-to(handhelds) {
+    visibility: hidden;
+  }
+}

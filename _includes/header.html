@@ -1,8 +1,15 @@
+{% assign current = page.url | downcase | split: '/' %}
 <header>
     <div class="logo">
+      {% if current[1] != null %}
         <a href="/">
             <img src="{{ "/img/carlos-borges-logo-plain.svg" | prepend: site.baseurl }}" width="50" height="50" />
         </a>
+        <div id="logo-text" class="desktop-only">
+          <h1>Carlos Borges</h1>
+          <h2>Web & Mobile Development</h2>
+        </div>
+        {% endif %}
     </div>
     {% include menu.html %}
     <hr />
