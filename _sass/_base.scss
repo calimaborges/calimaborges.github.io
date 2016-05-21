@@ -51,7 +51,19 @@ p {
 }
 
 main {
-  padding: 50px $small-margin;
+  padding: 50px $large-margin;
+
+  @include respond-to(handhelds) {
+      padding: 50px $small-margin;
+  }
+}
+
+header {
+    padding: 0 $large-margin;
+
+    @include respond-to(handhelds) {
+        padding: 0 $small-margin;
+    }
 }
 
 header, main {

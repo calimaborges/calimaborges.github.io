@@ -1,11 +1,9 @@
 $max-size: 800px;
 
 $small-margin: 5%;
-$medium-margin: 10%;
-$large-margin: 15%;
-$ultra-large-margin: 20%;
+$large-margin: 40px;
 
-$break-small: 320px;
+$break-small: 440px;
 $break-large: 1024px;
 $break-ultra-large: 1300px;
 
@@ -22,8 +20,4 @@ $break-ultra-large: 1300px;
     @else if $media == ultra-wide-screens {
         @media only screen and (min-width: $break-ultra-large) { @content; }
     }
-}
-
-@mixin halfsize {
-    width: ($max-size - $small-margin)/2;
 }

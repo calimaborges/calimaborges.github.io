@@ -10,8 +10,16 @@ permalink: /blog/
         <time datetime="{{ post.date | date_to_xmlschema }}" itemprop="datePublished">
             {% include date-pt-br.html data=post.date %}
         </time>
-        <div id="title"><a href="{{post.url | prepend:site.baseurl }}">{{ post.title }}</a></div>
-        <div id="abstract">{{ post.abstract }}</div>
+        <div id="title">
+            <a href="{{post.url | prepend:site.baseurl }}">
+                {{ post.title }}
+                {% if post.subtitle %}
+                    - {{ post.subtitle }}
+                {% endif %}
+            </a>
+
+        </div>
+        <div id="abstract">{{ post.excerpt }}</div>
       </li>
     {% endfor %}
 </ul>
