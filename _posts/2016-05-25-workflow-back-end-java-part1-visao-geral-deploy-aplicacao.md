@@ -1,12 +1,15 @@
 ---
 layout:     post
-date:       2016-05-01 21:07:16 -0300
-title:      "Workflow Backend Java"
+date:       2016-05-25 00:00:00 -0300
+title:      "Workflow Back-end Java"
 subtitle:   "Parte 1: visão geral e deploy da aplicação"
 author:     Carlos Augusto Borges
 categories: java workflow back-end workflow-back-end-java
 comments:   true
 ---
+
+[comment]: <> (Lembrar de falar que tudo será abordado de forma superficial e que é necessário um conhecimento mínimo de programação web)
+[comment]: <> (Tentar focar o menos possível na plataforma e sim na idéia. O projeto serve apenas para exemplificar o uso.)
 
 Nesta série vou mostrar o *workflow* que utilizo atualmente para desenvolver
 *back-ends*. O passo-a-passo será feito gerando uma API REST de um serviço de
@@ -18,6 +21,7 @@ e o deploy da aplicação será feito no [Heroku][heroku].
 
 A idéia é começar com um *archetype* básico do [Maven][maven] e aos poucos irmos
 progredindo até chegarmos a aplicação web que desejamos.
+
 
 
 # Pré-Requisitos
