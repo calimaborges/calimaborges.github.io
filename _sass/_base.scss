@@ -1,61 +1,61 @@
 /*---- BASIC ELEMENTS ----*/
 * {
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 html {
-  font-family: Roboto, sans-serif;
-  font-weight: 300;
-  color: #333;
+    font-family: Roboto, sans-serif;
+    font-weight: 300;
+    color: #333;
 }
 
 body {
-  background-color: #fff;
+    background-color: #fff;
 }
 
 h1, h2, h3 {
-  text-transform: uppercase;
-  font-weight: 700;
-  margin-top: 30px;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-top: 30px;
 }
 
 h1 {
-  text-align: center;
-  font-size: 2.0em;
-  margin-bottom: 10px;
+    text-align: center;
+    font-size: 2.0em;
+    margin-bottom: 10px;
 }
 
 h2 {
-  font-size: 1.5em;
-  margin-bottom: 8px;
+    font-size: 1.5em;
+    margin-bottom: 8px;
 }
 
 h3 {
-  font-size: 1.0em;
-  margin-bottom: 5px;
+    font-size: 1.0em;
+    margin-bottom: 5px;
 }
 
 hr {
-  border: 0;
-  height: 1px;
-  background: #333;
-  background-image: linear-gradient(to right, #efefef, #ddd, #efefef);
-  clear: both;
-  position: relative;
-  top: 20px;
+    border: 0;
+    height: 1px;
+    background: #333;
+    background-image: linear-gradient(to right, #efefef, #ddd, #efefef);
+    clear: both;
+    position: relative;
+    top: 20px;
 }
 
 p {
-  line-height: 1.5em;
-  margin: 5px 0 30px 0;
+    line-height: 1.5em;
+    margin: 5px 0 30px 0;
 }
 
 main {
-  padding: 50px $large-margin;
+    padding: 50px $large-margin;
 
-  @include respond-to(handhelds) {
-      padding: 50px $small-margin;
-  }
+    @include respond-to(handhelds) {
+        padding: 50px $small-margin;
+    }
 }
 
 header {
@@ -67,21 +67,21 @@ header {
 }
 
 header, main {
-  max-width: $max-size;
-  margin: 0 auto;
+    max-width: $max-size;
+    margin: 0 auto;
 }
 
 footer {
-  padding-top: 50px;
+    padding-top: 50px;
 }
 
 a {
-  color: #aaa;
-  transition: color 0.25s;
-  font-weight: 400;
-  font-size: 0.9em;
+    color: #aaa;
+    transition: color 0.25s;
+    font-weight: 400;
+    font-size: 0.9em;
 }
 
 a:hover {
-  color: #333;
+    color: #333;
 }

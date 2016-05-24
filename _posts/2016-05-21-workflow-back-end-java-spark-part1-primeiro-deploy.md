@@ -37,7 +37,8 @@ descrevendo a licença do projeto e o `.gitignore` de acordo com configurações
 comuns da linguagem selecionada.
 
 O GIF a seguir mostra a criação do projeto **taskify** que será o exemplo
-utilizado por nós nessa série.
+utilizado por nós nesta série.
+
 
 
 
