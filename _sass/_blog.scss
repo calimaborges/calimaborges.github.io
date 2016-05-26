@@ -6,20 +6,49 @@ ul#blog-archive  {
         time {
             font-size: 0.8em;
             font-weight: 400;
+            color: #999;
+            display: block;
+            margin-bottom: 5px;
         }
+
+        hr {
+            margin-bottom: 10px;
+        }
+        
     }
 
     a {
         font-weight: 400;
         color: #444;
         transition: color 0.25s;
+        font-size: 1.0em;
     }
 
     a:hover {
         color: #aaa;
     }
 
+
+    #title {
+
+        margin-bottom: 5px;
+
+        a {
+            font-size: 1.0em;
+            text-transform: uppercase;
+            text-decoration: none;
+        }
+
+    }
+
+    #abstract {
+        p {
+            margin-bottom: 5px;
+        }
+    }
+
     .active {
         font-weight: 300;
     }
+
 }

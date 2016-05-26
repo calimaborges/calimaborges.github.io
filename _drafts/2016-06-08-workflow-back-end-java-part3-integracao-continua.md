@@ -8,7 +8,8 @@ categories: java workflow back-end workflow-back-end-java
 comments:   true
 ---
 
-[comment]: <> (Mostrar a importância e a utilidade da integração contínua.)
-[comment]: <> (Lembrar que estamos falando de forma rasa sobre o tópico e que existe muito a ser explorando ainda.)
-[comment]: <> (Tentar focar o menos possível na plataforma e sim na idéia. O projeto serve apenas para exemplificar o uso.)
-[comment]: <> (Objetivo: Mostrar como configuramos o projeto no Travis CI)
+Mostrar a importância e a utilidade da integração contínua. Lembrar que estamos
+falando de forma rasa sobre o tópico e que existe muito a ser explorando ainda.
+Tentar focar o menos possível na plataforma e sim na idéia. O projeto serve
+apenas para exemplificar o uso. Objetivo: Mostrar como configuramos o projeto no
+Travis CI

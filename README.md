@@ -9,3 +9,5 @@
 - [ ] Iniciar projeto "taskify"
 - [ ] Documentar passo-a-passo da criação do taskify para ter os primeiros posts
 - [ ] Criar submit do contato chamando webservice do "taskify"
+- [ ] Adicionar no final do post a lista de "tags", inclusive na listagem
+- [ ] Adequar listagem de posts para parecer http://benchling.engineering/

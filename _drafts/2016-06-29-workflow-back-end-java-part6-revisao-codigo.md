@@ -8,8 +8,8 @@ categories: java workflow back-end workflow-back-end-java
 comments:   true
 ---
 
-[comment]: <> (Mostrar a importância e a utilidade da revisão de código.)
-[comment]: <> (Lembrar que estamos falando de forma rasa sobre o tópico e que existe muito a ser explorando ainda.)
-[comment]: <> (Tentar focar o menos possível na plataforma e sim na idéia. O projeto serve apenas para exemplificar o uso.)
-[comment]: <> (Objetivo: Configurar Heroku review apps. Explicar sobre revião de código)
-[comment]: <> (Ler antes: http://engineering.usertesting.com/2016/02/3-common-code-review-pitfalls/)
+Mostrar a importância e a utilidade da revisão de código. Lembrar que estamos
+falando de forma rasa sobre o tópico e que existe muito a ser explorando ainda.
+Tentar focar o menos possível na plataforma e sim na idéia. O projeto serve
+apenas para exemplificar o uso. Objetivo: Configurar Heroku review apps.
+Explicar sobre revião de código. Ler antes: http://engineering.usertesting.com/2016/02/3-common-code-review-pitfalls/
