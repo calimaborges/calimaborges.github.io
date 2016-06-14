@@ -2,7 +2,7 @@
 layout:     post
 date:       2016-05-25 00:00:00 -0300
 title:      "Workflow Back-end Java"
-subtitle:   "Parte 1: visão geral e deploy da aplicação"
+subtitle:   "Parte 1: Hello World Spark"
 author:     Carlos Augusto Borges
 categories: java workflow back-end workflow-back-end-java
 comments:   true
