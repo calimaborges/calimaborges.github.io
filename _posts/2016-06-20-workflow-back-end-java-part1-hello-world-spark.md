@@ -8,6 +8,9 @@ categories: java workflow back-end workflow-back-end-java
 comments:   true
 ---
 
+{% capture intro %}{% include posts/introducao-serie-workflow-back-end-java.md %}{% endcapture %}
+{{ intro | markdownify }}
+
 Nesta série vou mostrar o *workflow* que utilizo atualmente para desenvolver
 *back-ends*. O passo-a-passo será feito gerando uma API REST de um serviço de
 gestão de tarefas.
