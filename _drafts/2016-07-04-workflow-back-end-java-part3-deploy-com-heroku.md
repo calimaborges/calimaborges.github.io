@@ -1,11 +1,12 @@
 ---
 layout:     post
-date:       2016-05-25 00:00:00 -0300
+date:       2016-07-04 00:00:00 -0300
 title:      "Workflow Back-end Java"
-subtitle:   "Parte 1: Hello World Spark"
+subtitle:   "Parte 3: Deploy no Heroku"
 author:     Carlos Augusto Borges
 categories: java workflow back-end workflow-back-end-java
 comments:   true
+serie: workflow-back-end-java
 ---
 
 Nesta série vou mostrar o *workflow* que utilizo atualmente para desenvolver
