@@ -9,34 +9,21 @@ comments:   true
 serie: workflow-back-end-java
 ---
 
-Comecemos com a primeira parte da série *Workflow Back-end Java*
+Na primeira parte da série criaremos um *Hello World* básico para a Web. Para isso utlizaremos o framework [Spark][spark-java]. A idéia é iniciarmos com um *archetype* básico do [Maven][maven] e aos poucos irmos progredindo até chegarmos a aplicação web desejada.
 
 {% include posts/introducao-serie-workflow-back-end-java.html %}
 
-
-
 [comment]: <> (Lembrar de falar que tudo será abordado de forma superficial e que é necessário um conhecimento mínimo de programação web)
 [comment]: <> (Tentar focar o menos possível na plataforma e sim na idéia. O projeto serve apenas para exemplificar o uso.)
-
 
 # Pré-Requisitos
 
 * Java 8 [java.oracle.com][java]
 * Maven [maven.apache.org][maven]
-* Heroku Toolbelt [toolbelt.heroku.com][heroku-toolbelt]
-* Conta no GitHub [github.com][github]
+
+# Passo 1: Criar o esqueleto da aplicação com o Maven
 
 
-# Passo 1: GitHub
-
-A primeira coisa que gosto de fazer antes de iniciar qualquer projeto é criar
-um repositório no [GitHub][github]. Por que? Porque o GitHub já cria um arquivo
-`README.md` com título e descrição do projeto, outro arquivo `LICENSE`
-descrevendo a licença do projeto e o `.gitignore` de acordo com configurações
-comuns da linguagem selecionada.
-
-O GIF a seguir mostra a criação do projeto **taskify** que será o exemplo
-utilizado por nós nesta série.
 
 
 

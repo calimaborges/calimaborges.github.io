@@ -6,13 +6,16 @@ permalink: /blog/
 
 <ul id="blog-archive">
     {% for post in site.posts %}
-      <li>
+    <li>
+        <time datetime="{{ post.date | date_to_xmlschema }}" itemprop="datePublished">
+            {% include date-pt-br.html data=post.date %}
+        </time>
         <div id="title">
 
             <a href="{{post.url | prepend:site.baseurl }}">
                 {{ post.title }}
                 {% if post.subtitle %}
-                    - {{ post.subtitle }}
+                - {{ post.subtitle }}
                 {% endif %}
             </a>
 
@@ -20,11 +23,7 @@ permalink: /blog/
         <div id="abstract">
             {{ post.excerpt | remove: '<p>' | remove: '</p>' }}<a href="{{post.url | prepend:site.baseurl }}">»</a>
         </div>
-
-        <time datetime="{{ post.date | date_to_xmlschema }}" itemprop="datePublished">
-          {% include date-pt-br.html data=post.date %}
-        </time>
         <hr />
-      </li>
+    </li>
     {% endfor %}
 </ul>
