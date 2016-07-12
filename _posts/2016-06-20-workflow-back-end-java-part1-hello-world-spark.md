@@ -39,7 +39,7 @@ package: carlosborges.taskify
  Y: : Y
 ```
 
-# Passo 2: Crie o arquivo .editorconfig na raíz do projeto
+# Passo 2: Crie o arquivo `.editorconfig` na raíz do projeto
 
 ```
 # http://editorconfig.org
@@ -161,7 +161,7 @@ java -jar target/taskify-api-1.0-SNAPSHOT-jar-with-dependencies.jar
 
 Acesse [http://localhost:4567/][localhost] e verifique se o texto **Hello World** aparece na tela.
 
-## Pronto
+# Pronto
 
 Pronto! Seu primeiro servidor web está rodando na sua máquina.
 
