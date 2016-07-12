@@ -20,9 +20,7 @@ Na primeira parte da série criaremos um *Hello World* básico para a Web. Para 
 
 # Passo 1: Criar o esqueleto da aplicação
 
-Primeiramente criamos a estrutura básica de pastas do projeto. Normalmente cada linguagem ou gerenciador de pacotes possui um certo padrão para isso. No nosso projeto usaremos o Maven e o archetype quickstart.
-
-```
+```bash
 mvn archetype:generate -DarchetypeGroupId=org.apache.maven.archetypes -DarchetypeArtifactId=maven-archetype-quickstart
 ```
 
@@ -41,18 +39,7 @@ package: carlosborges.taskify
  Y: : Y
 ```
 
-# Passo 2: Crie arquivos básicos
-
-
-### .gitignore
-
-```
-target
-.idea
-*.iml
-```
-
-### .editorconfig
+# Passo 2: Crie o arquivo .editorconfig na raíz do projeto
 
 ```
 # http://editorconfig.org
@@ -75,64 +62,16 @@ trim_trailing_whitespace = false
 max_line_length = 0
 ```
 
-Várias IDEs suportam ou possuem algum plugin para suportar o arquivo `.editorconfig`. Ele é muito útil para padronizar alguns detalhes dos arquivos, como por exemplo, tipo de EOL, tamanho de identação, tipo de identação etc. Leia mais em: [http://editorconfig.org/][editorconfig]
+# Passo 3: Adicione as dependências do Spark
 
-### README.md
+Arquivo `pom.xml` dentro da tag `<dependencies>`
 
-```
-# taskify-backend
-Simple task manager to create, do, delete and postpone tasks
-```
-
-Costumo usar o padrão `# nome do projeto` e logo abaixo uma breve descrição do projeto.
-
-### LICENSE
-
-```
-The MIT License (MIT)
-
-Copyright (c) 2016 Carlos Augusto Borges
-
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
-```
-
-Preencha esse arquivo com a licença a ser adotada pelo seu software.
-
-
-# Passo 3: Rode o projeto pela primeira vez
-
-Agora que temos um esqueleto básico estamos prontos para a primeira build do projeto. Para isso execute o comando:
-
-```
-mvn clean package
-```
-
-Ao final o texto **BUILD SUCCESS** deve aparecer. Se não for o caso, verifique sua conexão com a internet, o arquivo `~/.m2/settings.xml`, pesquise o erro no [Google][google] ou poste um comentário abaixo.
-
-
-# Passo 4: Crie um servidor web
-
-Nosso objetivo nessa parte é criar um servidor simples que retorno o texto `Hello World` quando acessarmos o endereço [http://localhost:4567/][localhost]. Para esse passo usaremos o [Spark][spark-java] no seu arquivo `pom.xml`
-
-## Adicione a dependência do Spark
-
-```
+```xml
+<dependency>
+    <groupId>org.slf4j</groupId>
+    <artifactId>slf4j-simple</artifactId>
+    <version>1.6.4</version>
+</dependency>
 <dependency>
     <groupId>com.sparkjava</groupId>
     <artifactId>spark-core</artifactId>
@@ -140,11 +79,11 @@ Nosso objetivo nessa parte é criar um servidor simples que retorno o texto `Hel
 </dependency>
 ```
 
-## Crie o GET
+# Passo 4: Crie um GET simples
 
-Altere o arquivo `App.java` para que ele utilize o [Spark][spark-java] para responder a uma requisição `GET`, conforme o exemplo abaixo:
+Arquivo `App.java`
 
-```
+```java
 package carlosborges.taskify;
 
 import static spark.Spark.*;
@@ -159,11 +98,11 @@ public class App
 
 ```
 
-## Informe ao Maven qual a versão do Java
+# Passo 5: Preencha os dados de compilação no Maven
 
-Adicione as linhas abaixo ao seu `pom.xml`
+Arquivo `pom.xml` dentro da tag raíz `<project>`
 
-```
+```xml
 <build>
     <plugins>
         <plugin>
@@ -178,20 +117,11 @@ Adicione as linhas abaixo ao seu `pom.xml`
 </build>
 ```
 
-## Verifique se o projeto está funcionando
+# Passo 6: Faça o Maven gerar um JAR
 
-```
-mvn clean package
-```
+Arquivo `pom.xml` dentro da tag `<plugins>`
 
-Ao final o texto **BUILD SUCCESS** deve aparecer. Se não for o caso, verifique sua conexão com a internet, o arquivo `~/.m2/settings.xml`, pesquise o erro no [Google][google] ou poste um comentário abaixo.
-
-
-## Faça com que o Maven gere um JAR após a build
-
-Adicione as linhas abaixo ao seu `pom.xml` dentro de `<plugins>` e faça as devidas adatações:
-
-```
+```xml
 <plugin>
     <artifactId>maven-assembly-plugin</artifactId>
     <configuration>
@@ -215,48 +145,19 @@ Adicione as linhas abaixo ao seu `pom.xml` dentro de `<plugins>` e faça as devi
 </plugin>
 ```
 
-# Passo 5: Execute o projeto e verifique se está funcionando
-
-## Execute o comando de *build*
+# Passo 7: Compile o projeto
 
 ```
 mvn clean package
 ```
 
-## Execute o projeto
+# Passo 8: Execute o servidor auto contido
 
 ```
 java -jar target/taskify-api-1.0-SNAPSHOT-jar-with-dependencies.jar
 ```
 
-## Corrija os problemas
-
-Quando rodamos nosso projeto o seguinte texto aparece:
-
-```
-SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
-SLF4J: Defaulting to no-operation (NOP) logger implementation
-SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
-```
-
-Isso quer dizer que nada está sendo *loggado* e isso é um problema. É importante que consigamos analisar o que está acontecendo com nossa aplicação. Para corrigir esse problema basta adicionar a dependência do SL4J no seu `pom.xml`:
-
-```
-<dependency>
-    <groupId>org.slf4j</groupId>
-    <artifactId>slf4j-simple</artifactId>
-    <version>1.6.4</version>
-</dependency>
-```
-
-## Compile e execute o servidor novamente
-
-```
-mvn clean package
-java -jar target/taskify-api-1.0-SNAPSHOT-jar-with-dependencies.jar
-```
-
-## Verifique o resultado
+# Passo 9: Verifique o resultado
 
 Acesse [http://localhost:4567/][localhost] e verifique se o texto **Hello World** aparece na tela.
 
