@@ -9,7 +9,7 @@ comments:   true
 serie: workflow-back-end-java
 ---
 
-Na primeira parte da série criaremos um *Hello World* básico para a Web. Para isso utlizaremos o framework [Spark][spark-java]. A idéia é iniciarmos com um *archetype* básico do [Maven][maven] e aos poucos irmos progredindo até chegarmos a aplicação web desejada.
+Na primeira parte da série criaremos um *Hello World* básico para a Web. Para isso utlizaremos o framework [Spark][spark-java]. A idéia é iniciarmos com um *archetype* básico do [Maven][maven] e irmos progredindo até chegarmos a aplicação web desejada.
 
 {% include posts/introducao-serie-workflow-back-end-java.html %}
 
@@ -100,7 +100,7 @@ public class App
 
 # Passo 5: Preencha os dados de compilação no Maven
 
-Arquivo `pom.xml` dentro da tag raíz `<project>`
+Arquivo `pom.xml` dentro da tag raiz `<project>`
 
 ```xml
 <build>
@@ -164,15 +164,3 @@ Acesse [http://localhost:4567/][localhost] e verifique se o texto **Hello World*
 # Pronto
 
 Pronto! Seu primeiro servidor web está rodando na sua máquina.
-
-
-[java]:                 http://java.oracle.com
-[maven]:                http://maven.apache.org/
-[heroku-toolbelt]:      https://toolbelt.heroku.com/
-[spark-java]:           http://sparkjava.com/  
-[github]:               http://github.com/
-[heroku]:               http://heroku.com/
-[travisci]:             http://travis-ci.org/
-[editorconfig]:         http://editorconfig.org/
-[google]:               http://google.com/
-[localhost]:            http://localhost:4567/
