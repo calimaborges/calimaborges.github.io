@@ -1,36 +1,43 @@
-Ao longo da série vou mostrar o <i>workflow</i> que utilizo atualmente para desenvolver
-<i>back-ends</i>. O passo-a-passo será feito gerando uma API REST de um serviço de
-gestão de tarefas. A série considera que o leitor já possui uma certa experiência
-com Java ou desenvolvimento Web e portanto tenta ser o mais sucinta possível.
+<div class="sobre-a-serie">
 
-<h2> Posts da série </h2>
+    <h1> Sobre a série</h1>
 
-<ul>
-    {% for post in site.posts reversed %}
-        {% if post.serie != 'workflow-back-end-java' %}
-            {% continue %}
-        {% endif %}
+    <p>Ao longo da série vou mostrar o <i>workflow</i> que utilizo para desenvolver
+    <i>back-ends</i>. O passo-a-passo será feito gerando uma API REST de um serviço de
+    gestão de tarefas.</p>
 
-        <li>
-            <a href="{{post.url | prepend:site.baseurl }}">
-                {{ post.title }}
-                {% if post.subtitle %}
-                - {{ post.subtitle }}
-                {% endif %}
-            </a>
-        </li>
-    {% endfor %}
+    <p>A série considera que o leitor já possui uma certa experiência
+    com Java ou desenvolvimento Web e portanto tenta ser o mais sucinta possível.</p>
 
-    <p>
-        <i>A série está dividida em 11 partes mas somente os artigos já publicados são mostrados acima.</i>
-    </p>
     <p>
         O código da série está disponível em
         <a href="https://github.com/calimaborges/taskify-api">https://github.com/calimaborges/taskify-api</a> e está separado por branch
         de modo que para cada parte do tutorial existe uma branch no formato <code class="highlighter-rouge">parteN</code>.
     </p>
-</ul>
 
+    <h2> Posts da série </h2>
+
+    <ul>
+        {% for post in site.posts reversed %}
+            {% if post.serie != 'workflow-back-end-java' %}
+                {% continue %}
+            {% endif %}
+
+            <li>
+                <a href="{{post.url | prepend:site.baseurl }}">
+                    {{ post.title }} - {{ post.subtitle }}
+                </a>
+            </li>
+        {% endfor %}
+
+            <li class="em-breve"><i>Em breve:</i> Workflow Back-end Java - Parte 3: Deploy no Heroku</li>
+    </ul>
+
+    <p>
+        <i>A série está dividida em 11 partes mas somente os artigos já publicados são mostrados acima.</i>
+    </p>
+
+</div>
 
 [java]:                 http://java.oracle.com
 [maven]:                http://maven.apache.org/

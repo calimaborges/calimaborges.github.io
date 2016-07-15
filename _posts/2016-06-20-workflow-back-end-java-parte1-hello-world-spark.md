@@ -39,7 +39,7 @@ package: carlosborges.taskify
  Y: : Y
 ```
 
-# Passo 2: Crie o arquivo `.editorconfig` na raíz do projeto
+# Passo 2: Crie o arquivo `.editorconfig` na raiz do projeto
 
 ```
 # http://editorconfig.org

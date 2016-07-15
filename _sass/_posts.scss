@@ -35,5 +35,20 @@ article {
             text-align: left;
             text-transform: none;
         }
+
+        h2 {
+            text-transform: none;
+        }
+    }
+}
+
+.sobre-a-serie {
+    border: 1px solid #dddddd;
+    border-left: 10px solid #cccccc;
+    padding: 0px 40px;
+    border-radius: 5px;
+
+    .em-breve {
+        font-size: 0.9em;
     }
 }
