@@ -115,3 +115,15 @@ git push -u origin master
 # Pronto
 
 Seu projeto já está versionado com o Git e disponível no GitHub!
+
+[java]:                 http://java.oracle.com
+[maven]:                http://maven.apache.org/
+[heroku-toolbelt]:      https://toolbelt.heroku.com/
+[spark-java]:           http://sparkjava.com/
+[github]:               http://github.com/
+[git]:                  https://git-scm.com/
+[heroku]:               http://heroku.com/
+[travisci]:             http://travis-ci.org/
+[editorconfig]:         http://editorconfig.org/
+[google]:               http://google.com/
+[localhost]:            http://localhost:4567/

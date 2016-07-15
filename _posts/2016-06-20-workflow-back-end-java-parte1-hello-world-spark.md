@@ -164,3 +164,15 @@ Acesse [http://localhost:4567/][localhost] e verifique se o texto **Hello World*
 # Pronto
 
 Pronto! Seu primeiro servidor web está rodando na sua máquina.
+
+[java]:                 http://java.oracle.com
+[maven]:                http://maven.apache.org/
+[heroku-toolbelt]:      https://toolbelt.heroku.com/
+[spark-java]:           http://sparkjava.com/
+[github]:               http://github.com/
+[git]:                  https://git-scm.com/
+[heroku]:               http://heroku.com/
+[travisci]:             http://travis-ci.org/
+[editorconfig]:         http://editorconfig.org/
+[google]:               http://google.com/
+[localhost]:            http://localhost:4567/
