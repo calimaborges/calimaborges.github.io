@@ -39,7 +39,8 @@ git status
 # Passo 3: Crie o arquivo `.gitignore` na raiz do projeto
 
 Os arquivos abaixo são específicos para a minha IDE. O ideal é que cada
-time/desenvolvedor adicione os arquivos pertinentes a esse arquivo.
+time/desenvolvedor adicione os arquivos pertinentes a serem ignorados pelo Git
+no `.gitignore`.
 
 ```
 .idea
@@ -98,10 +99,11 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 ```
 
-# Passo 8: Faça commit dos arquivos adicionados
+# Passo 8: Adicione e faça commit dos arquivos
 
 ```bash
-git commit -a -m "Adicionando arquivos recomendados pelo GitHub"
+git add --all
+git commit -m "Adicionando arquivos recomendados pelo GitHub"
 ```
 
 # Passo 8: Adicione o repositório do GitHub ao seu projeto

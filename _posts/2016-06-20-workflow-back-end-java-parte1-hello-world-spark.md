@@ -108,6 +108,7 @@ Arquivo `pom.xml` dentro da tag raiz `<project>`
         <plugin>
             <groupId>org.apache.maven.plugins</groupId>
             <artifactId>maven-compiler-plugin</artifactId>
+            <version>3.5.1</version>
             <configuration>
                 <source>1.8</source>
                 <target>1.8</target>
@@ -125,9 +126,11 @@ Arquivo `pom.xml` dentro da tag `<plugins>`
 <plugin>
     <artifactId>maven-assembly-plugin</artifactId>
     <configuration>
+        <finalName>taskify-api</finalName>
         <descriptorRefs>
             <descriptorRef>jar-with-dependencies</descriptorRef>
         </descriptorRefs>
+        <appendAssemblyId>false</appendAssemblyId>
         <archive>
             <manifest>
                 <mainClass>carlosborges.taskify.App</mainClass>
@@ -154,7 +157,7 @@ mvn clean package
 # Passo 8: Execute o servidor web
 
 ```
-java -jar target/taskify-api-1.0-SNAPSHOT-jar-with-dependencies.jar
+java -jar target/taskify-api.jar
 ```
 
 # Passo 9: Verifique o resultado

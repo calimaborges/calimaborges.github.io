@@ -1,6 +1,7 @@
 [java]:                 http://java.oracle.com
 [maven]:                http://maven.apache.org/
 [heroku-toolbelt]:      https://toolbelt.heroku.com/
+[heroku]:               https://heroku.com/
 [spark-java]:           http://sparkjava.com/
 [github]:               http://github.com/
 [git]:                  https://git-scm.com/
