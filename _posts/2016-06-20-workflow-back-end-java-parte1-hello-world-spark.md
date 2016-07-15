@@ -151,7 +151,7 @@ Arquivo `pom.xml` dentro da tag `<plugins>`
 mvn clean package
 ```
 
-# Passo 8: Execute o servidor auto contido
+# Passo 8: Execute o servidor web
 
 ```
 java -jar target/taskify-api-1.0-SNAPSHOT-jar-with-dependencies.jar

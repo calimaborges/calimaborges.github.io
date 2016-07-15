@@ -18,7 +18,11 @@ Nesta segunda parte da série criaremos um repositório Git local e logo em segu
 * Git [git-scm.com][git]
 * Conta no GitHub [github.com][github]
 
-Os comandos a seguir devem ser digitados na pasta raiz do seu projeto.
+# Passo 0: Verificar se está na pasta do projeto
+
+```
+cd taskify-api
+```
 
 # Passo 1: Iniciar um repositório Git no projeto
 
