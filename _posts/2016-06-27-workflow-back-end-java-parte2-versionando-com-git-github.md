@@ -30,13 +30,13 @@ cd taskify-api
 git init
 ```
 
-# Passo 2: Verifique o status do repositório
+# Passo 2: Verificar o status do repositório
 
 ```bash
 git status
 ```
 
-# Passo 3: Crie o arquivo `.gitignore` na raiz do projeto
+# Passo 3: Criar o arquivo `.gitignore` na raiz do projeto
 
 Os arquivos abaixo são específicos para a minha IDE. O ideal é que cada
 time/desenvolvedor adicione os arquivos pertinentes a serem ignorados pelo Git
@@ -48,23 +48,23 @@ no `.gitignore`.
 target
 ```
 
-# Passo 4: Adicione os arquivos ao repositório
+# Passo 4: Adicionar os arquivos ao repositório
 
 ```bash
 git add --all
 ```
 
-# Passo 5: Faça o commit
+# Passo 5: Fazer o commit
 
 ```bash
 git commit -m "Primeiro commit"
 ```
 
-# Passo 6: Crie o projeto no GitHub
+# Passo 6: Criar o projeto no GitHub
 
 ![GitHub project creation]({{ site.url }}/img/taskify-api-github-project-creation.gif)
 
-# Passo 7: Adicione os arquivos `LICENSE` e `README.md`
+# Passo 7: Adicionar os arquivos `LICENSE` e `README.md`
 
 Arquivo `README.md`
 
@@ -99,20 +99,20 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 ```
 
-# Passo 8: Adicione e faça commit dos arquivos
+# Passo 8: Adicionar ao Git e fazer *commit* dos arquivos
 
 ```bash
 git add --all
 git commit -m "Adicionando arquivos recomendados pelo GitHub"
 ```
 
-# Passo 8: Adicione o repositório do GitHub ao seu projeto
+# Passo 8: Adicionar o repositório do GitHub ao seu projeto
 
 ```bash
 git remote add origin https://github.com/<your_username>/taskify-api.git
 ```
 
-# Passo 9: Envie seu projeto ao GitHub
+# Passo 9: Enviar seu projeto ao GitHub
 
 ```bash
 git push -u origin master

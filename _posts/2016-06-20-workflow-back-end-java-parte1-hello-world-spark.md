@@ -39,7 +39,7 @@ package: carlosborges.taskify
  Y: : Y
 ```
 
-# Passo 2: Crie o arquivo `.editorconfig` na raiz do projeto
+# Passo 2: Criar o arquivo `.editorconfig` na raiz do projeto
 
 ```
 # http://editorconfig.org
@@ -62,7 +62,7 @@ trim_trailing_whitespace = false
 max_line_length = 0
 ```
 
-# Passo 3: Adicione as dependências do Spark
+# Passo 3: Adicionar as dependências do Spark
 
 Arquivo `pom.xml` dentro da tag `<dependencies>`
 
@@ -79,7 +79,7 @@ Arquivo `pom.xml` dentro da tag `<dependencies>`
 </dependency>
 ```
 
-# Passo 4: Crie um GET simples
+# Passo 4: Criar um GET simples
 
 Arquivo `App.java`
 
@@ -98,7 +98,7 @@ public class App
 
 ```
 
-# Passo 5: Preencha os dados de compilação no Maven
+# Passo 5: Preencher os dados de compilação no Maven
 
 Arquivo `pom.xml` dentro da tag raiz `<project>`
 
@@ -118,7 +118,7 @@ Arquivo `pom.xml` dentro da tag raiz `<project>`
 </build>
 ```
 
-# Passo 6: Faça o Maven gerar um JAR
+# Passo 6: Fazer o Maven gerar um JAR
 
 Arquivo `pom.xml` dentro da tag `<plugins>`
 
@@ -148,19 +148,19 @@ Arquivo `pom.xml` dentro da tag `<plugins>`
 </plugin>
 ```
 
-# Passo 7: Compile o projeto
+# Passo 7: Compilar o projeto
 
 ```
 mvn clean package
 ```
 
-# Passo 8: Execute o servidor web
+# Passo 8: Executar o servidor web
 
 ```
 java -jar target/taskify-api.jar
 ```
 
-# Passo 9: Verifique o resultado
+# Passo 9: Verificar o resultado
 
 Acesse [http://localhost:4567/][localhost] e verifique se o texto **Hello World** aparece na tela.
 

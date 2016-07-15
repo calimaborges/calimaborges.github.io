@@ -10,7 +10,7 @@ serie: workflow-back-end-java
 ---
 
 Nesta parte da série colocaremos nossa aplicação disponível para o mundo, ou seja,
-em produção. Para isso utlizaremos o Heroku [Heroku][heroku] e o [Heroku Toolbelt][heroku-toolbelt].
+em produção. Para isso utlizaremos o [Heroku][heroku] e o [Heroku Toolbelt][heroku-toolbelt].
 
 {% include posts/introducao-serie-workflow-back-end-java.html %}
 
@@ -37,13 +37,13 @@ heroku login
 heroku create
 ```
 
-# Passo 3: Crie o arquivo `Procfile` na raiz do projeto
+# Passo 3: Criar o arquivo `Procfile` na raiz do projeto
 
 ```
 web:    java -jar target/taskify-api.jar
 ```
 
-# Passo 4: Atualize o código para utilizar a porta do Heroku
+# Passo 4: Atualizar o código para utilizar a porta fornecida pelo ambiente do Heroku
 
 No arquivo `App.java` no início do método `main`
 
@@ -52,26 +52,26 @@ String strPort = System.getenv("PORT") != null ? System.getenv("PORT") : "4567";
 port(Integer.valueOf(strPort));
 ```
 
-# Passo 5: Adicione os arquivos e faça o commit no seu Git
+# Passo 5: Adicionar os arquivos e fazer o *commit* no seu Git
 
 ```
 git add --all
 git commit -m="Adaptações para o Heroku"
 ```
 
-# Passo 6: Faço o deploy no Heroku
+# Passo 6: Fazer o deploy no Heroku
 
 ```
 git push heroku master
 ```
 
-# Passo 7: Acesse sua aplicação em produção
+# Passo 7: Acessar sua aplicação em produção
 
 ```
 heroku open
 ```
 
-# Passo 8: Envie para o GitHub
+# Passo 8: Enviar para o GitHub
 
 ```
 git push
