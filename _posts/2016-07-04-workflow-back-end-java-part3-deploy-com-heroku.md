@@ -39,18 +39,19 @@ heroku create
 
 # Passo 3: Criar o arquivo `Procfile` na raiz do projeto
 
-```
-web:    java -jar target/taskify-api.jar
-```
+<code
+    data-gist-id="d472ee5cb13bccd1f48b10f2fd97ead8"
+    data-gist-file="Procfile"></code>
+
 
 # Passo 4: Atualizar o código para utilizar a porta fornecida pelo ambiente do Heroku
 
 No arquivo `App.java` no início do método `main`
 
-```java
-String strPort = System.getenv("PORT") != null ? System.getenv("PORT") : "4567";
-port(Integer.valueOf(strPort));
-```
+<code
+    data-gist-id="d472ee5cb13bccd1f48b10f2fd97ead8"
+    data-gist-file="App.java"
+    data-gist-highlight-line="9-10"></code>
 
 # Passo 5: Adicionar os arquivos e fazer o *commit* no seu Git
 
