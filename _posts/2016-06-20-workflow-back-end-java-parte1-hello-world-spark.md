@@ -20,145 +20,76 @@ Na primeira parte da série criaremos um *Hello World* básico para a Web. Para 
 
 # Passo 1: Criar o esqueleto da aplicação
 
-```bash
-mvn archetype:generate -DarchetypeGroupId=org.apache.maven.archetypes -DarchetypeArtifactId=maven-archetype-quickstart
-```
+<code
+    data-gist-hide-line-numbers="true"
+    data-gist-id="b1014ede537693c09d4d2215221433a2"
+    data-gist-file="criar-app.sh"></code>
+
 
 Preencha os dados de acordo com as informações do seu projeto. Nesse projeto preencheremos da seguinte forma:
 
-```
-Define value for property 'groupId': : carlosborges.taskify
-Define value for property 'artifactId': : taskify-api    
-Define value for property 'version':  1.0-SNAPSHOT: :
-Define value for property 'package':  carlosborges.taskify: :
-Confirm properties configuration:
-groupId: carlosborges.taskify
-artifactId: taskify-api
-version: 1.0-SNAPSHOT
-package: carlosborges.taskify
- Y: : Y
-```
+<code
+    data-gist-hide-line-numbers="true"
+    data-gist-id="b1014ede537693c09d4d2215221433a2"
+    data-gist-file="confirmation-maven.sh"></code>
 
 # Passo 2: Criar o arquivo `.editorconfig` na raiz do projeto
 
-```
-# http://editorconfig.org
-root = true
 
-[*]
-charset = utf-8
-end_of_line = lf
-indent_size = 4
-indent_style = space
-insert_final_newline = true
-max_line_length = 80
-trim_trailing_whitespace = true
-
-[*.md]
-max_line_length = 0
-trim_trailing_whitespace = false
-
-[COMMIT_EDITMSG]
-max_line_length = 0
-```
+<code
+    data-gist-id="b1014ede537693c09d4d2215221433a2"
+    data-gist-file=".editorconfig"></code>
 
 # Passo 3: Adicionar as dependências do Spark
 
 Arquivo `pom.xml` dentro da tag `<dependencies>`
 
-```xml
-<dependency>
-    <groupId>org.slf4j</groupId>
-    <artifactId>slf4j-simple</artifactId>
-    <version>1.6.4</version>
-</dependency>
-<dependency>
-    <groupId>com.sparkjava</groupId>
-    <artifactId>spark-core</artifactId>
-    <version>2.5</version>
-</dependency>
-```
+<code
+    data-gist-id="b1014ede537693c09d4d2215221433a2"
+    data-gist-file="pom.xml"
+    data-gist-line="24-33"></code>
+<!--data-gist-highlight-line="24-33"-->
 
 # Passo 4: Criar um GET simples
 
 Arquivo `App.java`
 
-```java
-package carlosborges.taskify;
-
-import static spark.Spark.*;
-
-public class App
-{
-    public static void main( String[] args )
-    {
-        get("/", (req, res) -> "Hello World");
-    }
-}
-
-```
+<code
+    data-gist-id="b1014ede537693c09d4d2215221433a2"
+    data-gist-file="App.java"></code>
 
 # Passo 5: Preencher os dados de compilação no Maven
 
 Arquivo `pom.xml` dentro da tag raiz `<project>`
 
-```xml
-<build>
-    <plugins>
-        <plugin>
-            <groupId>org.apache.maven.plugins</groupId>
-            <artifactId>maven-compiler-plugin</artifactId>
-            <version>3.5.1</version>
-            <configuration>
-                <source>1.8</source>
-                <target>1.8</target>
-            </configuration>
-        </plugin>
-    </plugins>
-</build>
-```
+<code
+    data-gist-id="b1014ede537693c09d4d2215221433a2"
+    data-gist-file="pom.xml"
+    data-gist-line="38-46"></code>
+
 
 # Passo 6: Fazer o Maven gerar um JAR
 
 Arquivo `pom.xml` dentro da tag `<plugins>`
 
-```xml
-<plugin>
-    <artifactId>maven-assembly-plugin</artifactId>
-    <configuration>
-        <finalName>taskify-api</finalName>
-        <descriptorRefs>
-            <descriptorRef>jar-with-dependencies</descriptorRef>
-        </descriptorRefs>
-        <appendAssemblyId>false</appendAssemblyId>
-        <archive>
-            <manifest>
-                <mainClass>carlosborges.taskify.App</mainClass>
-            </manifest>
-        </archive>
-    </configuration>
-    <executions>
-        <execution>
-            <phase>package</phase>
-            <goals>
-                <goal>single</goal>
-            </goals>
-        </execution>
-    </executions>
-</plugin>
-```
+<code
+    data-gist-id="b1014ede537693c09d4d2215221433a2"
+    data-gist-file="pom.xml"
+    data-gist-line="47-69"></code>
 
 # Passo 7: Compilar o projeto
 
-```
-mvn clean package
-```
+<code
+    data-gist-hide-line-numbers="true"
+    data-gist-id="b1014ede537693c09d4d2215221433a2"
+    data-gist-file="compilar-projeto.sh"></code>
 
 # Passo 8: Executar o servidor web
 
-```
-java -jar target/taskify-api.jar
-```
+<code
+    data-gist-hide-line-numbers="true"
+    data-gist-id="b1014ede537693c09d4d2215221433a2"
+    data-gist-file="executar-projeto.sh"></code>
 
 # Passo 9: Verificar o resultado
 

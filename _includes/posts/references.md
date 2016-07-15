@@ -10,3 +10,4 @@
 [editorconfig]:         http://editorconfig.org/
 [google]:               http://google.com/
 [localhost]:            http://localhost:4567/
+[gist-embed]:           http://blairvanderhoof.com/gist-embed/
