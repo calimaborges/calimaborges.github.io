@@ -20,18 +20,26 @@ Na primeira parte da série criaremos um *Hello World* básico para a Web. Para 
 
 # Passo 1: Criar o esqueleto da aplicação
 
-<code
-    data-gist-hide-line-numbers="true"
-    data-gist-id="b1014ede537693c09d4d2215221433a2"
-    data-gist-file="criar-app.sh"></code>
+```bash
+mvn archetype:generate -DarchetypeGroupId=org.apache.maven.archetypes -DarchetypeArtifactId=maven-archetype-quickstart
+```
+
 
 
 Preencha os dados de acordo com as informações do seu projeto. Nesse projeto preencheremos da seguinte forma:
 
-<code
-    data-gist-hide-line-numbers="true"
-    data-gist-id="b1014ede537693c09d4d2215221433a2"
-    data-gist-file="confirmation-maven.sh"></code>
+```bash
+Define value for property 'groupId': : carlosborges.taskify
+Define value for property 'artifactId': : taskify-api    
+Define value for property 'version':  1.0-SNAPSHOT: :
+Define value for property 'package':  carlosborges.taskify: :
+Confirm properties configuration:
+groupId: carlosborges.taskify
+artifactId: taskify-api
+version: 1.0-SNAPSHOT
+package: carlosborges.taskify
+ Y: : Y
+```
 
 # Passo 2: Criar o arquivo `.editorconfig` na raiz do projeto
 
@@ -79,17 +87,15 @@ Arquivo `pom.xml` dentro da tag `<plugins>`
 
 # Passo 7: Compilar o projeto
 
-<code
-    data-gist-hide-line-numbers="true"
-    data-gist-id="b1014ede537693c09d4d2215221433a2"
-    data-gist-file="compilar-projeto.sh"></code>
+```bash
+mvn clean package
+```
 
 # Passo 8: Executar o servidor web
 
-<code
-    data-gist-hide-line-numbers="true"
-    data-gist-id="b1014ede537693c09d4d2215221433a2"
-    data-gist-file="executar-projeto.sh"></code>
+```bash
+java -jar target/taskify-api.jar
+```
 
 # Passo 9: Verificar o resultado
 
