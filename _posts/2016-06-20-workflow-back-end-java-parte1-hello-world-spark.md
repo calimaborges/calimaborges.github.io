@@ -73,7 +73,7 @@ Arquivo `pom.xml` dentro da tag raiz `<project>`
 <code
     data-gist-id="b1014ede537693c09d4d2215221433a2"
     data-gist-file="pom.xml"
-    data-gist-line="38-46"></code>
+    data-gist-line="36-46,70-71"></code>
 
 
 # Passo 6: Fazer o Maven gerar um JAR

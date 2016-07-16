@@ -51,7 +51,7 @@ No arquivo `App.java` no início do método `main`
 <code
     data-gist-id="d472ee5cb13bccd1f48b10f2fd97ead8"
     data-gist-file="App.java"
-    data-gist-highlight-line="9-10"></code>
+    data-gist-highlight-line="7-8"></code>
 
 # Passo 5: Adicionar os arquivos e fazer o *commit* no seu Git
 
