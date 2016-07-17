@@ -41,7 +41,7 @@ Extrair inicialização do servidor para outro método no arquivo `App.java`
     data-gist-highlight-line="21"
     data-gist-line="18-23"></code>
 
-# Passo 3: Adicione a dependência para fazer requisições no servidor Unirest
+# Passo 3: Adicionar a dependência para fazer requisições no servidor
 
 <code
     data-gist-id="c768595c04f8c0056928be78177d1df7"
