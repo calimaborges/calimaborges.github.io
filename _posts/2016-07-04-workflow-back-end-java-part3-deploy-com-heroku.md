@@ -38,7 +38,7 @@ heroku create
 ```
 
 # Passo 3: Criar o arquivo `Procfile` na raiz do projeto
-
+<!-- more -->
 <code
     data-gist-id="d472ee5cb13bccd1f48b10f2fd97ead8"
     data-gist-file="Procfile"></code>

@@ -42,6 +42,7 @@ Os arquivos abaixo são específicos para a minha IDE. O ideal é que cada
 time/desenvolvedor adicione os arquivos pertinentes a serem ignorados pelo Git
 no `.gitignore`.
 
+<!-- more -->
 <code
     data-gist-id="d5c1c1aac585b38304e3da1c29a52c0c"
     data-gist-file=".gitignore"></code>

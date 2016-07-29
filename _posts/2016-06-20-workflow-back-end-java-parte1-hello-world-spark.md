@@ -43,7 +43,7 @@ package: carlosborges.taskify
 
 # Passo 2: Criar o arquivo `.editorconfig` na raiz do projeto
 
-
+<!-- more -->
 <code
     data-gist-id="b1014ede537693c09d4d2215221433a2"
     data-gist-file=".editorconfig"></code>

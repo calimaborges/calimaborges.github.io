@@ -15,8 +15,10 @@ layout: null
       <item>
         <title>{{ post.title | xml_escape }} - {{ post.subtitle | xml_escape }}</title>
         <description>
-            {{ post.content | xml_escape | truncatewords: 150 }}
-            <a href="{{post.url | prepend:site.baseurl | prepend: site.url }}">Continuar lendo...</a>
+            {{ post.content | split:'<!-- more -->' | first | xml_escape }}
+            {% if post.content contains '<!-- more -->' %}
+                <a href="{{post.url | prepend:site.baseurl | prepend: site.url }}">Continuar lendo...</a>
+            {% endif %}
         </description>
         <pubDate>{{ post.date | date_to_rfc822 }}</pubDate>
         <link>{{ post.url | prepend: site.baseurl | prepend: site.url }}</link>

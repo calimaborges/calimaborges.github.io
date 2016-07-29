@@ -27,7 +27,7 @@ cd taskify-api
 # Passo 1: Preparar servidor para ser iniciado em outra classe
 
 Extrair inicialização do servidor para outro método no arquivo `App.java`
-
+<!-- more -->
 <code
     data-gist-id="c768595c04f8c0056928be78177d1df7"
     data-gist-file="App.java"
