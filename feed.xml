@@ -15,7 +15,7 @@ layout: null
       <item>
         <title>{{ post.title | xml_escape }} - {{ post.subtitle | xml_escape }}</title>
         <description>
-            {{ post.excerpt | remove: '<p>' | remove: '</p>' }}
+            {{ post.content | xml_escape | truncatewords: 150 }}
             <a href="{{post.url | prepend:site.baseurl | prepend: site.url }}">Continuar lendo...</a>
         </description>
         <pubDate>{{ post.date | date_to_rfc822 }}</pubDate>
