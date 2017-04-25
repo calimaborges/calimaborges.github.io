@@ -1,6 +1,6 @@
 ---
 layout:     post
-date:       2017-04-25 13:30:00 -0300
+date:       2017-04-26 13:30:00 -0300
 title:      "JavaScript for grown ups"
 subtitle:   "Part 1: node.js, npm, require, jest, reducer"
 author:     Carlos Augusto Borges
