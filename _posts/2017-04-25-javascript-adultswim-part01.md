@@ -1,30 +1,32 @@
 ---
 layout:     post
 date:       2017-04-25 13:30:00 -0300
-title:      "JavaScript para gente grande"
-subtitle:   "Parte 1: node.js, npm, require, jest, publish"
+title:      "JavaScript for grown ups"
+subtitle:   "Part 1: node.js, npm, require, jest, reducer"
 author:     Carlos Augusto Borges
 categories: javascript node jest npm
 comments:   true
 serie: javascript-adultswim
 ---
 
-# Pré-Requisitos
+# Pre-requisits
 
+* Know JavaScript
 * Node.js 7.x
 * NPM 4.x
 
-# O que é [Node.js][node]?
+# What is [Node.js][node]?
 
-Um runtime de JavaScript baseado na Engine V8 do Chrome. (https://nodejs.org/)
+Runtime built on Chrome's V8 JavaScript engine.
 
 # Hello World
 
+**file: index.js**
 ```javascript
-// index.js
 console.log('Hello World!');
 ```
 
+**Command Line**
 ```bash
 node index.js
 rm index.js
@@ -32,22 +34,25 @@ rm index.js
 
 # [NPM][npm]
 
+**Command Line**
 ```bash
 mkdir javascript-adultswim-01
 cd javascript-adultswim-01
 ```
 
+**file: README.MD**
 ```markdown
-<!-- README.md -->
 # javascript-adultswim-01
 
 Simple node.js script
 ```
 
+**Command Line**
 ```bash
 npm init --yes
 ```
 
+**file: package.json**
 ```javascript
 {
   "name": "javascript-adultswim-01",
@@ -63,67 +68,87 @@ npm init --yes
 }
 ```
 
-# require
-
-```bash
-npm install --save chalk
-```
-
-```javascript
-// index.js
-var chalk = require('chalk');
-
-console.log(chalk.green('Hello green world!'));
-```
-
 # jest
 
+**Comand Line**
 ```bash
 npm install --save-dev jest
 ```
 
+**part of package.json**
 ```javascript
 "scripts": {
   "test": "jest"
 }
 ```
 
+**counter.test.js**
 ```javascript
-// index.test.js
-var killAccents = require('./index.js');
+var counter = require('./counter');
 
-test('should remove accent from a', function() {
-    expect(killAccents('á')).toBe('a');
+test('should return initial state if state is undefined', function() {
+  expect(counter(undefined, {})).toBe(0);
+});
+
+test('increment state', function() {
+    expect(counter(0, { type: 'INCREMENT' })).toBe(1);
+    expect(counter(1, { type: 'INCREMENT' })).toBe(2);
+});
+
+test('decrement state', function() {
+  expect(counter(0, { type: 'DECREMENT' })).toBe(-1);
+  expect(counter(1, { type: 'DECREMENT' })).toBe(0);
+});
+
+test('should return current state for unknown action', function() {
+  expect(counter(1, { type: 'UKNOWN_TYPE' })).toBe(1);
 });
 ```
 
-```javascript
-// index.js
+**Command Line**
+```bash
+npm test -- --watch
+```
 
-module.exports = function killAccents(string) {
-  return 'a';
+**counter.js**
+```javascript
+module.exports = function counter(state, action) {
+  if (state === undefined) return 0;
+  switch (action.type) {
+    case 'INCREMENT': return state + 1;
+    case 'DECREMENT': return state - 1;
+    default: return state;
+  }
 };
 ```
 
-```bash
-npm test
-```
-
-# more tests
-
+**index.js**
 ```javascript
-// index.test.js
-var killAccents = require('./index.js');
+var counter = require('./counter');
 
-test('should remove accents', function() {
-    expect(killAccents('áçãéíóúàão')).toBe('acaeiouaao');
-});
+console.log(counter(0, { type: 'INCREMENT' })); // 1
+console.log(counter(1, { type: 'DECREMENT' })); // 0
 ```
 
-# Pronto
+# Pure and impure functions
 
-Pronto! Seu código já possui um teste automatizado que não é lá essas coisas, mas
-já é um começo.
+## Pure function
+
+* no side effects (database or network calls)
+* idempotent (return value always the same for the same arguments)
+* immutable (can't change the argument received)
+
+*ps: the previous example is pure*
+
+## Impure function
+
+* not pure :-)
+
+# Understand
+
+Watch Dan Abramov's "[Getting Started with Redux](https://egghead.io/courses/getting-started-with-redux)" course at [egghead][egghead].
+
 
 [node]:                 https://nodejs.org/
-[npm]:                  http://npmjs.com/
+[npm]:                  https://npmjs.com/
+[egghead]:              https://egghead.io/
