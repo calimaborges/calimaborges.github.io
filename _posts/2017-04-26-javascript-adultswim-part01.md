@@ -2,7 +2,7 @@
 layout:     post
 date:       2017-04-26 13:30:00 -0300
 title:      "JavaScript for grown ups"
-subtitle:   "Part 1: node.js, npm, require, jest, reducer"
+subtitle:   "Part 1: node.js, npm, require, jest, pure functions"
 author:     Carlos Augusto Borges
 categories: javascript node jest npm
 comments:   true
@@ -36,13 +36,13 @@ rm index.js
 
 **Command Line**
 ```bash
-mkdir javascript-adultswim-01
-cd javascript-adultswim-01
+mkdir javascript-adultswim
+cd javascript-adultswim
 ```
 
 **file: README.MD**
 ```markdown
-# javascript-adultswim-01
+# javascript-adultswim
 
 Simple node.js script
 ```
@@ -55,7 +55,7 @@ npm init --yes
 **file: package.json**
 ```javascript
 {
-  "name": "javascript-adultswim-01",
+  "name": "javascript-adultswim",
   "version": "1.0.0",
   "description": "Simple node.js script",
   "main": "index.js",
@@ -75,7 +75,7 @@ npm init --yes
 npm install --save-dev jest
 ```
 
-**part of package.json**
+**part of file: package.json**
 ```javascript
 "scripts": {
   "test": "jest"
@@ -150,6 +150,6 @@ Watch Dan Abramov's "[Getting Started with Redux](https://egghead.io/courses/get
 course at [egghead][egghead] until lesson "[Pure and Impure Functions](https://egghead.io/lessons/javascript-redux-pure-and-impure-functions)".
 
 
-[node]:                 https://nodejs.org/
-[npm]:                  https://npmjs.com/
-[egghead]:              https://egghead.io/
+[node]: https://nodejs.org/
+[npm]: https://npmjs.com/
+[egghead]: https://egghead.io/
