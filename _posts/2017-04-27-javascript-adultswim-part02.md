@@ -121,7 +121,7 @@ npm install --save-dev webpack
 
 # All together
 
-## Redux with html actions
+## Redux with HTML
 
 **index.js**
 ```javascript
