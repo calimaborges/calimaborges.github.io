@@ -146,7 +146,8 @@ console.log(counter(1, { type: 'DECREMENT' })); // 0
 
 # Understand
 
-Watch Dan Abramov's "[Getting Started with Redux](https://egghead.io/courses/getting-started-with-redux)" course at [egghead][egghead].
+Watch Dan Abramov's "[Getting Started with Redux](https://egghead.io/courses/getting-started-with-redux)"
+course at [egghead][egghead] until lesson "[Pure and Impure Functions](https://egghead.io/lessons/javascript-redux-pure-and-impure-functions)".
 
 
 [node]:                 https://nodejs.org/
