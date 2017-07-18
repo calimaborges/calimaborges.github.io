@@ -9,6 +9,9 @@ comments:   true
 serie: javascript-adultswim
 ---
 
+This post will talk about basic Node.js development.
+<!-- more -->
+
 # Pre-requisits
 
 * Know JavaScript
