@@ -9,6 +9,9 @@ comments:   true
 serie: javascript-adultswim
 ---
 
+This post will talk about Redux and webpack.
+<!-- more -->
+
 # Pre-requisits
 
 * Part 1
