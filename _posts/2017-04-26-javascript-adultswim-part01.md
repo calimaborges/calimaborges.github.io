@@ -1,10 +1,10 @@
 ---
 layout:     post
 date:       2017-04-26 13:30:00 -0300
-title:      "JavaScript for grownups"
+title:      "JavaScript for Grownups"
 subtitle:   "Part 1: node.js, npm, require, jest, pure functions"
 author:     Carlos Augusto Borges
-categories: javascript node jest npm
+categories: javascript node jest npm pure functions
 comments:   true
 serie: javascript-adultswim
 ---
@@ -19,9 +19,8 @@ course at [egghead][egghead] until lesson "[Pure and Impure Functions](https://e
 
 # Pre-requisits
 
-* Know JavaScript
-* Node.js 7.x
-* NPM 4.x
+* Node.js
+* NPM
 
 # What is [Node.js][node]?
 
@@ -48,7 +47,7 @@ mkdir javascript-adultswim
 cd javascript-adultswim
 ```
 
-**file: README.MD**
+**file: README.md**
 ```markdown
 # javascript-adultswim
 

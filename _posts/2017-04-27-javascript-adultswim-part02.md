@@ -1,7 +1,7 @@
 ---
 layout:     post
 date:       2017-04-27 13:30:00 -0300
-title:      "JavaScript for grownups"
+title:      "JavaScript for Grownups"
 subtitle:   "Part 2: redux and webpack"
 author:     Carlos Augusto Borges
 categories: javascript webpack redux
@@ -18,9 +18,8 @@ course at [egghead][egghead] until lesson "[React Counter Example](https://egghe
 
 # Pre-requisits
 
-* Part 1
-* Node.js 7.x
-* NPM 4.x
+* Node.js
+* NPM
 
 # What is [Redux][redux]?
 
@@ -125,6 +124,7 @@ npm install --save-dev webpack
 </html>
 ```
 
+* Run the build script `npm run build`
 * Open the `index.html` in our browser and open the debug console.
 * See how you node.js code is compatible with the browser :-D
 
