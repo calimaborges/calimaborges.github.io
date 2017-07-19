@@ -1,7 +1,7 @@
 ---
 layout:     post
 date:       2017-04-26 13:30:00 -0300
-title:      "JavaScript for grown ups"
+title:      "JavaScript for grownups"
 subtitle:   "Part 1: node.js, npm, require, jest, pure functions"
 author:     Carlos Augusto Borges
 categories: javascript node jest npm
