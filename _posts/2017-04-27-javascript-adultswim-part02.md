@@ -98,7 +98,7 @@ npm install --save-dev webpack
 ```
 
 **part of file: package.json**
-```javascript
+```json
 "scripts": {
   "test": "jest",
   "build": "webpack index.js bundle.js"
@@ -189,7 +189,7 @@ module.exports = {
 ```
 
 **part of file: package.json**
-```javascript
+```json
 "scripts": {
   "test": "jest",
   "build": "webpack"
