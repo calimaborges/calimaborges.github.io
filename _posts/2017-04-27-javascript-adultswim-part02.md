@@ -1,7 +1,7 @@
 ---
 layout:     post
-date:       2017-04-26 13:30:00 -0300
-title:      "JavaScript for grown ups"
+date:       2017-04-27 13:30:00 -0300
+title:      "JavaScript for grownups"
 subtitle:   "Part 2: redux and webpack"
 author:     Carlos Augusto Borges
 categories: javascript webpack redux
