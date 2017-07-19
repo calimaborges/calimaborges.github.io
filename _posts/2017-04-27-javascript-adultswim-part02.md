@@ -9,7 +9,9 @@ comments:   true
 serie: javascript-adultswim
 ---
 
-In this second part of the series we will learn about redux and webpack. This post is better used as reference. To understand in a more complete way please refer to Dan Abramov's "[Getting Started with Redux](https://egghead.io/courses/getting-started-with-redux)"
+In this second part of the series we will learn about redux and webpack. 
+
+This post is better used as reference. To understand in a more complete way please refer to Dan Abramov's "[Getting Started with Redux](https://egghead.io/courses/getting-started-with-redux)"
 course at [egghead][egghead] until lesson "[React Counter Example](https://egghead.io/lessons/javascript-redux-react-counter-example)". Also read Webpack's "[Get Started](https://webpack.js.org/guides/get-started/)" at [webpack site][webpack]
 
 {% include posts/intro-javascript-adultswim.html %}

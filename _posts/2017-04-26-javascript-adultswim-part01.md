@@ -10,6 +10,7 @@ serie: javascript-adultswim
 ---
 
 In this first part of the series we will learn about node.js, npm, require, jest and pure functions.
+
 This post is better used as reference. To understand in a more complete way please refer to Dan Abramov's "[Getting Started with Redux](https://egghead.io/courses/getting-started-with-redux)"
 course at [egghead][egghead] until lesson "[Pure and Impure Functions](https://egghead.io/lessons/javascript-redux-pure-and-impure-functions)".
 
