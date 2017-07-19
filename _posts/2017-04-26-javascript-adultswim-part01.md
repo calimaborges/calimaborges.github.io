@@ -85,8 +85,10 @@ npm install --save-dev jest
 
 **part of file: package.json**
 ```json
-"scripts": {
-  "test": "jest"
+{
+  "scripts": {
+    "test": "jest"
+  }
 }
 ```
 

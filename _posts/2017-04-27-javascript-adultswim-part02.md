@@ -107,7 +107,7 @@ npm install --save-dev webpack
   "scripts": {
     "test": "jest",
     "build": "webpack index.js bundle.js"
-  },
+  }
 }
 ```
 
@@ -200,7 +200,7 @@ module.exports = {
   "scripts": {
     "test": "jest",
     "build": "webpack"
-  },
+  }
 }
 ```
 
