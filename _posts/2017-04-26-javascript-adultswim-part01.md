@@ -56,7 +56,7 @@ npm init --yes
 ```
 
 **file: package.json**
-```javascript
+```json
 {
   "name": "javascript-adultswim",
   "version": "1.0.0",
@@ -79,7 +79,7 @@ npm install --save-dev jest
 ```
 
 **part of file: package.json**
-```javascript
+```json
 "scripts": {
   "test": "jest"
 }
