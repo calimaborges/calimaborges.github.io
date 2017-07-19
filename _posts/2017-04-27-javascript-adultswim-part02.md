@@ -59,7 +59,7 @@ npm install --save redux
 ```
 
 **file: index.js**
-```javacript
+```javascript
 var counter = require('./counter');
 var createStore = require('redux').createStore;
 
@@ -99,10 +99,12 @@ npm install --save-dev webpack
 
 **part of file: package.json**
 ```json
-"scripts": {
-  "test": "jest",
-  "build": "webpack index.js bundle.js"
-},
+{
+  "scripts": {
+    "test": "jest",
+    "build": "webpack index.js bundle.js"
+  },
+}
 ```
 
 **file: index.html**
@@ -190,10 +192,12 @@ module.exports = {
 
 **part of file: package.json**
 ```json
-"scripts": {
-  "test": "jest",
-  "build": "webpack"
-},
+{
+  "scripts": {
+    "test": "jest",
+    "build": "webpack"
+  },
+}
 ```
 
 # Understand
