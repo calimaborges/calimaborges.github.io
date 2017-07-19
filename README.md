@@ -1,7 +1,20 @@
 # carlosborg.es
 
+## References
+
+* https://help.github.com/articles/setting-up-your-github-pages-site-locally-with-jekyll/
+
+## Pre-requistis
+* Ruby
+* Bundler
+
+## Running
+
+
+
 ## TO DO
 
+- [ ] Migrar para gatsby? Wintersmith? Ou similares?
 - [x] Melhorar listagem de posts
 - [x] Destacar página ativa
 - [x] Adicionar texto ao lado do logo
