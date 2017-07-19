@@ -9,8 +9,12 @@ comments:   true
 serie: javascript-adultswim
 ---
 
-This post will talk about basic Node.js development.
-<!-- more -->
+In this first part of the series we will learn about node.js, npm, require, jest and pure functions.
+This post is better used as reference. To understand in a more complete way please refer to Dan Abramov's "[Getting Started with Redux](https://egghead.io/courses/getting-started-with-redux)"
+course at [egghead][egghead] until lesson "[Pure and Impure Functions](https://egghead.io/lessons/javascript-redux-pure-and-impure-functions)".
+
+{% include posts/intro-javascript-adultswim.html %}
+
 
 # Pre-requisits
 
@@ -146,11 +150,6 @@ console.log(counter(1, { type: 'DECREMENT' })); // 0
 ## Impure function
 
 * not pure :-)
-
-# Understand
-
-Watch Dan Abramov's "[Getting Started with Redux](https://egghead.io/courses/getting-started-with-redux)"
-course at [egghead][egghead] until lesson "[Pure and Impure Functions](https://egghead.io/lessons/javascript-redux-pure-and-impure-functions)".
 
 
 [node]: https://nodejs.org/

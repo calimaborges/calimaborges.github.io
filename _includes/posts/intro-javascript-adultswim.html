@@ -1,0 +1,18 @@
+<div class="sobre-a-serie">
+    This post is part of the <em>JavaScript for Grownups</em> series:
+
+    <ul>
+        {% for post in site.posts reversed %}
+            {% if post.serie != 'javascript-adultswim' %}
+                {% continue %}
+            {% endif %}
+
+            <li>
+                <a href="{{post.url | prepend:site.baseurl }}">
+                    {{ post.title }} - {{ post.subtitle }}
+                </a>
+            </li>
+        {% endfor %}
+
+    </ul>
+</div>
