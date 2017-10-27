@@ -116,5 +116,5 @@ git push -u origin master
 
 * Example:
   * [https://travis-ci.org/calimaborges/cover-project](https://travis-ci.org/calimaborges/cover-project)
-  * [https://coveralls.io/github/calimaborges/cover-project](https://travis-ci.org/calimaborges/cover-project)
-  * [https://github.com/calimaborges/cover-project](https://travis-ci.org/calimaborges/cover-project)
+  * [https://coveralls.io/github/calimaborges/cover-project](https://coveralls.io/github/calimaborges/cover-project)
+  * [https://github.com/calimaborges/cover-project](https://github.com/calimaborges/cover-project)
