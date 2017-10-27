@@ -112,7 +112,7 @@ git push -u origin master
 
 # Done!
 
-* Copy your badges to your repositories `README.md` and be happy :-)
+* Copy your badges to your `README.md` and be happy :-)
 
 * Example:
   * [https://travis-ci.org/calimaborges/cover-project](https://travis-ci.org/calimaborges/cover-project)
