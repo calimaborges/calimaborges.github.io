@@ -7,8 +7,13 @@ categories: javascript jest node coveralls travis
 comments:   true
 ---
 
+Easy steps to use travis, jest and coveralls.
+
 # Pre-requisits
 
+* GitHub account
+* Travis CI account
+* Coveralls account
 * Node.js
 * NPM
 
@@ -80,7 +85,7 @@ after_script:
 ## Create .gitignore
 
 **file: .gitignore**
-```gitignore
+```
 coverage
 node_modules
 ```
@@ -110,7 +115,7 @@ git push -u origin master
 * Copy your badges to your README and be happy :-)
 
 * Example:
-  * https://travis-ci.org/calimaborges/cover-project
-  * https://coveralls.io/github/calimaborges/cover-project
-  * https://github.com/calimaborges/cover-project
+  * [https://travis-ci.org/calimaborges/cover-project](https://travis-ci.org/calimaborges/cover-project)
+  * [https://coveralls.io/github/calimaborges/cover-project](https://travis-ci.org/calimaborges/cover-project)
+  * [https://github.com/calimaborges/cover-project](https://travis-ci.org/calimaborges/cover-project)
 ```
