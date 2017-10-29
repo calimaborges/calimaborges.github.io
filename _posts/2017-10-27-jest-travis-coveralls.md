@@ -11,11 +11,11 @@ Easy steps to use travis, jest and coveralls.
 
 # Pre-requisits
 
-* [GitHub account](github.com)
-* [Travis CI account](travis-ci.org)
-* [Coveralls account](coveralls.io)
-* [Node.js](nodejs.org)
-* [NPM](npmjs.com)
+* [GitHub account](http://github.com)
+* [Travis CI account](http://travis-ci.org)
+* [Coveralls account](http://coveralls.io)
+* [Node.js](http://nodejs.org)
+* [NPM](http://npmjs.com)
 
 # Start the project
 
