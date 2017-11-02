@@ -17,7 +17,7 @@ course at [egghead][egghead] until lesson "[Pure and Impure Functions](https://e
 {% include posts/intro-javascript-adultswim.html %}
 
 
-# Pre-requisits
+# Prerequisites
 
 * Node.js
 * NPM
