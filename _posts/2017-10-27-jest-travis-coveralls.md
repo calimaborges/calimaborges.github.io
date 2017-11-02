@@ -9,7 +9,7 @@ comments:   true
 
 Easy steps to use travis, jest and coveralls.
 
-# Pre-requisits
+# Prerequisites
 
 * [GitHub account](http://github.com)
 * [Travis CI account](http://travis-ci.org)
