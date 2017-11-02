@@ -16,7 +16,7 @@ course at [egghead][egghead] until lesson "[React Counter Example](https://egghe
 
 {% include posts/intro-javascript-adultswim.html %}
 
-# Pre-requisits
+# Prerequisites
 
 * Node.js
 * NPM
