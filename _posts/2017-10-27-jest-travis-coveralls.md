@@ -1,6 +1,6 @@
 ---
 layout:     post
-date:       2017-04-27 13:30:00 -0300
+date:       2017-10-27 13:30:00 -0300
 title:      "Configuring Jest, Travis and Coveralls"
 author:     Carlos Augusto Borges
 categories: javascript jest node coveralls travis
