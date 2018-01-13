@@ -36,14 +36,17 @@ npm install --save-dev jest
 ## Configure `package.json`
 
 **part of file: package.json**
+
 ```json
 "scripts": {
   "test": "jest --coverage"
 }
 ```
+
 ## Edit a test file
 
 **file: src/index.test.js**
+
 ```javascript
 const greeter = require(".");
 test("should return hello message", () => {
@@ -54,6 +57,7 @@ test("should return hello message", () => {
 ## Make your test pass
 
 **file: src/index.js**
+
 ```javascript
 module.exports = () => "Hello, world!";
 ```
@@ -71,6 +75,7 @@ npm install --save-dev coveralls
 ## Add travis configuration
 
 **file: .travis.yml**
+
 ```yml
 language: node_js
 node_js:
@@ -85,6 +90,7 @@ after_script:
 ## Create .gitignore
 
 **file: .gitignore**
+
 ```
 coverage
 node_modules
@@ -115,6 +121,6 @@ git push -u origin master
 * Copy your badges to your `README.md` and be happy :-)
 
 * Example:
-  * [https://travis-ci.org/calimaborges/cover-project](https://travis-ci.org/calimaborges/cover-project)
-  * [https://coveralls.io/github/calimaborges/cover-project](https://coveralls.io/github/calimaborges/cover-project)
-  * [https://github.com/calimaborges/cover-project](https://github.com/calimaborges/cover-project)
+  * [https://travis-ci.org/carlosborg-es/cover-project](https://travis-ci.org/carlosborg-es/cover-project)
+  * [https://coveralls.io/github/carlosborg-es/cover-project](https://coveralls.io/github/carlosborg-es/cover-project)
+  * [https://github.com/carlosborg-es/cover-project](https://github.com/carlosborg-es/cover-project)
